@@ -3,25 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Momota Sultana Maya | My Site</title>
+    <title>Momota Maya | CSE Student & Cake Artist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Momota Sultana Maya</h1>
-            <p class="welcome-text">Welcome to my personal site</p>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Maya<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#business">Cake Business</a></li>
+                <li><a href="#poem">Poem</a></li>
+                <li><a href="#song">Song</a></li>
+            </ul>
         </div>
+    </nav>
 
-        <div class="student-section">
-            <div class="student-info">
-                📚 Student of Computer Science & Engineering (CSE)<br>
-                🏛️ Northern University of Business and Technology<br>
-                ✉️ Email: snehanabila49@gmail.com
+    <div class="container">
+        <section id="home" class="profile-section">
+            <div class="profile-image">
+                <img src="profile.jpg" alt="Momota Maya">
+            </div>
+            <div class="profile-text">
+                <h2>Hi, I'm <span>Maya</span></h2>
+                <p class="tagline">Welcome to my personal site 😁</p>
+                <div class="social-buttons">
+                    <a href="https://www.facebook.com/momota.sultanamaya" target="_blank" class="social-btn fb">Facebook</a>
+                    <a href="https://facebook.com/groups/252914112701291/" target="_blank" class="social-btn group">Cake Group</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h3>About Me</h3>
+            <div class="about-grid">
+                <div class="about-item">
+                    <strong>🎓 Study</strong>
+                    <p>Computer Science & Engineering (CSE)<br>Northern University of Business and Technology</p>
+                </div>
+                <div class="about-item">
+                    <strong>💖 Hobby</strong>
+                    <p>Reading poetry, Listening to music, Coding, Traveling</p>
+                </div>
+                <div class="about-item">
+                    <strong>📧 Contact</strong>
+                    <p>snehanabila49@gmail.com</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="business" class="business-section">
+            <h3>🍰 Cake Business</h3>
+            <div class="business-card">
+                <p>I love creating delicious, beautiful cakes for all your special moments.</p>
+                <a href="https://facebook.com/groups/252914112701291/" target="_blank" class="group-btn">Join My Cake Group →</a>
+            </div>
+        </section>
+
+        <div class="skills-section">
+            <h3>⚡ Skills</h3>
+            <div class="skills">
+                <span>HTML/CSS</span>
+                <span>JavaScript</span>
+                <span>Python</span>
+                <span>Cake Design</span>
+                <span>Baking Art</span>
             </div>
         </div>
 
-        <div class="poem-section">
+        <section id="poem" class="poem-section">
+            <h3>📖 A Poem I Love</h3>
             <div class="poem-title">তাহারেই পড়ে মনে</div>
             <div class="poem-content">
                 হে কবি নীরব কেন ফাগুন যে এসেছে ধরায়<br>
@@ -32,29 +85,25 @@
                 দখিনা সমীর তার গন্ধে হয়েছে কি অধীর আকুল।
             </div>
             <div class="poet-name">
-                — সুফিয়া কামাল<br>
-                (সাঁঝের মায়া, ১৯৩৮)
+                — সুফিয়া কামাল
             </div>
-        </div>
+        </section>
 
-        <div class="song-section">
-            <div class="song-title">
-                আমার পছন্দের গান
-            </div>
-            <div class="song-details">
-                একটি মন ছুঁয়ে যাওয়া গান<br>
-                শুনতে নিচের লিংকে ক্লিক করুন
-            </div>
+        <section id="song" class="song-section">
+            <h3>🎵 My Favorite Song</h3>
             <div class="youtube-link">
-                <a href="https://youtu.be/2Vv-BfVoq4g" target="_blank">
-                    🎵 Watch on YouTube
-                </a>
+                <a href="https://youtu.be/2Vv-BfVoq4g" target="_blank">▶ Watch on YouTube</a>
             </div>
-        </div>
+        </section>
 
-        <div class="footer">
-            © 2026 Momota Sultana Maya | CSE Student
-        </div>
+        <footer class="footer">
+            <div class="social-links">
+                <a href="https://www.facebook.com/momota.sultanamaya" target="_blank">Facebook</a>
+                <a href="https://facebook.com/groups/252914112701291/" target="_blank">Cake Group</a>
+                <a href="mailto:snehanabila49@gmail.com">Email</a>
+            </div>
+            <p>© 2026 Momota Sultana Maya | CSE Student & Cake Artist</p>
+        </footer>
     </div>
 </body>
 </html>
