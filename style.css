@@ -354,7 +354,7 @@ body {
 .contact-social {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.5rem;
     margin: 1.8rem 0;
     flex-wrap: wrap;
 }
@@ -363,6 +363,11 @@ body {
     text-decoration: none;
     font-weight: 600;
     color: #2c3e4e;
+    transition: color 0.2s;
+}
+
+.contact-social a:hover {
+    color: #b1624b;
 }
 
 .quick-stats {
@@ -390,6 +395,11 @@ body {
     color: #8f9eb2;
     text-decoration: none;
     margin: 0 0.3rem;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: #b1624b;
 }
 
 @media (max-width: 768px) {
