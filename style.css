@@ -86,6 +86,7 @@ body {
     object-fit: cover;
     border: 4px solid #e94560;
     box-shadow: 0 20px 30px -12px rgba(233, 69, 96, 0.3);
+    animation: fadeInScale 0.8s ease-out;
 }
 
 .hero-badge {
@@ -94,6 +95,7 @@ body {
     font-size: 0.8rem;
     letter-spacing: 1px;
     margin-bottom: 1rem;
+    animation: fadeInUp 0.6s ease-out;
 }
 
 .hero-content h1 {
@@ -103,6 +105,9 @@ body {
     margin-bottom: 1rem;
     letter-spacing: -0.02em;
     color: #ffffff;
+    animation: fadeInUp 0.6s ease-out 0.1s forwards;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 .hero-content h1 span {
@@ -114,6 +119,9 @@ body {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 2rem;
+    animation: fadeInUp 0.6s ease-out 0.2s forwards;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 .hero-buttons {
@@ -121,6 +129,9 @@ body {
     gap: 1rem;
     margin-bottom: 2rem;
     flex-wrap: wrap;
+    animation: fadeInUp 0.6s ease-out 0.3s forwards;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 .btn-primary {
@@ -161,6 +172,9 @@ body {
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
+    animation: fadeInUp 0.6s ease-out 0.4s forwards;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 .quick-stats-hero .stat-number {
@@ -230,13 +244,15 @@ body {
     padding: 1.8rem;
     border-radius: 24px;
     border: 1px solid rgba(233, 69, 96, 0.2);
-    transition: 0.2s;
+    transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    animation: fadeInUp 0.6s ease-out forwards;
+    opacity: 0;
 }
 
 .edu-card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-8px) scale(1.02);
     border-color: #e94560;
-    box-shadow: 0 12px 24px -12px rgba(233, 69, 96, 0.2);
+    box-shadow: 0 20px 35px -12px rgba(233, 69, 96, 0.3);
 }
 
 .edu-card h3 {
@@ -264,6 +280,10 @@ body {
     line-height: 1.5;
 }
 
+.education-grid .edu-card:nth-child(1) { animation-delay: 0.1s; }
+.education-grid .edu-card:nth-child(2) { animation-delay: 0.2s; }
+.education-grid .edu-card:nth-child(3) { animation-delay: 0.3s; }
+
 .skills {
     padding: 5rem 2rem;
     background: #0f1322;
@@ -276,6 +296,8 @@ body {
 
 .skill-bar-item {
     margin-bottom: 1.5rem;
+    opacity: 0;
+    animation: slideInRight 0.5s ease-out forwards;
 }
 
 .skill-info {
@@ -299,6 +321,26 @@ body {
     border-radius: 30px;
     width: 0;
     box-shadow: 0 0 8px rgba(233, 69, 96, 0.5);
+    animation: fillProgress 1.2s ease-out forwards;
+}
+
+@keyframes fillProgress {
+    from { width: 0%; }
+    to { width: var(--width); }
+}
+
+.skill-bar-item:nth-child(1) { animation-delay: 0.1s; }
+.skill-bar-item:nth-child(2) { animation-delay: 0.2s; }
+.skill-bar-item:nth-child(3) { animation-delay: 0.3s; }
+.skill-bar-item:nth-child(4) { animation-delay: 0.4s; }
+.skill-bar-item:nth-child(5) { animation-delay: 0.5s; }
+.skill-bar-item:nth-child(6) { animation-delay: 0.6s; }
+.skill-bar-item:nth-child(7) { animation-delay: 0.7s; }
+.skill-bar-item:nth-child(8) { animation-delay: 0.8s; }
+
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
 }
 
 .research {
@@ -313,6 +355,15 @@ body {
     padding: 2.5rem;
     border-radius: 28px;
     border: 1px solid rgba(233, 69, 96, 0.2);
+    transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    animation: fadeInUp 0.6s ease-out 0.2s forwards;
+    opacity: 0;
+}
+
+.research-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: #e94560;
+    box-shadow: 0 20px 35px -12px rgba(233, 69, 96, 0.3);
 }
 
 .research-card p {
@@ -353,13 +404,15 @@ body {
     padding: 1.8rem;
     border-radius: 24px;
     border: 1px solid rgba(233, 69, 96, 0.2);
-    transition: 0.2s;
+    transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    animation: fadeInUp 0.6s ease-out forwards;
+    opacity: 0;
 }
 
 .achievement-card:hover {
-    transform: translateY(-6px);
+    transform: translateY(-8px) scale(1.02);
     border-color: #e94560;
-    box-shadow: 0 20px 30px -15px rgba(233, 69, 96, 0.2);
+    box-shadow: 0 20px 35px -12px rgba(233, 69, 96, 0.3);
 }
 
 .achievement-badge {
@@ -400,6 +453,12 @@ body {
     color: #c0c0d0;
 }
 
+.achievements-grid .achievement-card:nth-child(1) { animation-delay: 0.1s; }
+.achievements-grid .achievement-card:nth-child(2) { animation-delay: 0.2s; }
+.achievements-grid .achievement-card:nth-child(3) { animation-delay: 0.3s; }
+.achievements-grid .achievement-card:nth-child(4) { animation-delay: 0.4s; }
+.achievements-grid .achievement-card:nth-child(5) { animation-delay: 0.5s; }
+
 .poem {
     padding: 5rem 2rem;
     background: #0a0c15;
@@ -413,6 +472,15 @@ body {
     border-radius: 28px;
     text-align: center;
     border: 1px solid rgba(233, 69, 96, 0.2);
+    transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    animation: fadeInUp 0.6s ease-out 0.3s forwards;
+    opacity: 0;
+}
+
+.poem-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: #e94560;
+    box-shadow: 0 20px 35px -12px rgba(233, 69, 96, 0.3);
 }
 
 .poem-title {
@@ -533,6 +601,30 @@ body {
     color: #e94560;
 }
 
+/* Keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive */
 @media (max-width: 768px) {
     .hero-container {
         flex-direction: column;
