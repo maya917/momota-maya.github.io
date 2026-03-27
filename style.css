@@ -211,7 +211,7 @@ body {
 
 .education {
     padding: 5rem 2rem;
-    background: #1e293b;
+    background: #f1f5f9;
 }
 
 .education-grid {
@@ -223,16 +223,16 @@ body {
 }
 
 .edu-card {
-    background: #0f172a;
+    background: #ffffff;
     padding: 1.8rem;
     border-radius: 20px;
-    border: 1px solid #334155;
+    border: 1px solid #e2e8f0;
 }
 
 .edu-card h3 {
     font-size: 1.2rem;
     margin-bottom: 0.3rem;
-    color: #ffffff;
+    color: #0f172a;
 }
 
 .edu-institution {
@@ -244,13 +244,13 @@ body {
 
 .edu-detail {
     font-size: 0.8rem;
-    color: #94a3b8;
+    color: #64748b;
     margin-bottom: 0.8rem;
 }
 
 .edu-desc {
     font-size: 0.9rem;
-    color: #cbd5e1;
+    color: #334155;
     line-height: 1.5;
 }
 
@@ -292,21 +292,21 @@ body {
 
 .research {
     padding: 5rem 2rem;
-    background: #1e293b;
+    background: #f1f5f9;
 }
 
 .research-card {
     max-width: 800px;
     margin: 0 auto;
-    background: #0f172a;
+    background: #ffffff;
     padding: 2.5rem;
     border-radius: 24px;
-    border: 1px solid #334155;
+    border: 1px solid #e2e8f0;
 }
 
 .research-card p {
     margin-bottom: 1rem;
-    color: #cbd5e1;
+    color: #334155;
     line-height: 1.6;
 }
 
@@ -318,7 +318,7 @@ body {
 }
 
 .research-tags span {
-    background: #334155;
+    background: #f1f5f9;
     padding: 0.2rem 1rem;
     border-radius: 40px;
     font-size: 0.75rem;
@@ -384,17 +384,17 @@ body {
 
 .poem {
     padding: 5rem 2rem;
-    background: #1e293b;
+    background: #f1f5f9;
 }
 
 .poem-card {
     max-width: 700px;
     margin: 0 auto;
-    background: #0f172a;
+    background: #ffffff;
     padding: 2.5rem;
     border-radius: 24px;
     text-align: center;
-    border: 1px solid #334155;
+    border: 1px solid #e2e8f0;
 }
 
 .poem-title {
@@ -408,12 +408,12 @@ body {
     font-size: 1rem;
     line-height: 1.7;
     margin-bottom: 1rem;
-    color: #cbd5e1;
+    color: #334155;
 }
 
 .poet-name {
     text-align: right;
-    color: #94a3b8;
+    color: #64748b;
     margin-bottom: 1.5rem;
 }
 
@@ -492,12 +492,12 @@ body {
 }
 
 .footer {
-    background: #1e293b;
+    background: #f1f5f9;
     text-align: center;
     padding: 2rem;
     color: #94a3b8;
     font-size: 0.8rem;
-    border-top: 1px solid #334155;
+    border-top: 1px solid #e2e8f0;
 }
 
 .footer-links {
