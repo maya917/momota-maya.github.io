@@ -18,8 +18,7 @@ body {
 }
 
 .navbar {
-    background: rgba(255, 255, 255, 0.98);
-    backdrop-filter: blur(12px);
+    background: #ffffff;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -67,7 +66,7 @@ body {
 
 .hero {
     padding: 5rem 2rem;
-    background: white;
+    background: #ffffff;
 }
 
 .hero-container {
@@ -212,7 +211,7 @@ body {
 
 .education {
     padding: 5rem 2rem;
-    background: #f8fafc;
+    background: #f1f5f9;
 }
 
 .education-grid {
@@ -224,7 +223,7 @@ body {
 }
 
 .edu-card {
-    background: white;
+    background: #ffffff;
     padding: 1.8rem;
     border-radius: 20px;
     border: 1px solid #e2e8f0;
@@ -257,7 +256,7 @@ body {
 
 .skills {
     padding: 5rem 2rem;
-    background: white;
+    background: #ffffff;
 }
 
 .skills-full {
@@ -293,13 +292,13 @@ body {
 
 .research {
     padding: 5rem 2rem;
-    background: #f8fafc;
+    background: #f1f5f9;
 }
 
 .research-card {
     max-width: 800px;
     margin: 0 auto;
-    background: white;
+    background: #ffffff;
     padding: 2.5rem;
     border-radius: 24px;
     border: 1px solid #e2e8f0;
@@ -329,7 +328,7 @@ body {
 
 .achievements {
     padding: 5rem 2rem;
-    background: white;
+    background: #ffffff;
 }
 
 .achievements-grid {
@@ -385,13 +384,13 @@ body {
 
 .poem {
     padding: 5rem 2rem;
-    background: #f8fafc;
+    background: #f1f5f9;
 }
 
 .poem-card {
     max-width: 700px;
     margin: 0 auto;
-    background: white;
+    background: #ffffff;
     padding: 2.5rem;
     border-radius: 24px;
     text-align: center;
@@ -435,7 +434,7 @@ body {
 
 .contact {
     padding: 5rem 2rem;
-    background: white;
+    background: #ffffff;
 }
 
 .contact-content {
@@ -493,7 +492,7 @@ body {
 }
 
 .footer {
-    background: #f8fafc;
+    background: #f1f5f9;
     text-align: center;
     padding: 2rem;
     color: #94a3b8;
