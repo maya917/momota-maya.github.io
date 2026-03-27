@@ -211,56 +211,105 @@ body {
     line-height: 1.65;
 }
 
-.skills {
+/* Education Section */
+.education {
     padding: 5rem 2rem;
     background: white;
 }
 
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+.education-grid {
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.skill-category {
+.edu-card {
     background: #fefaf7;
-    padding: 1.8rem;
-    border-radius: 28px;
+    padding: 2rem;
+    border-radius: 24px;
     border: 1px solid #f0e7e0;
     transition: 0.2s;
 }
 
-.skill-category h3 {
+.edu-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px -12px rgba(0,0,0,0.08);
+}
+
+.edu-card h3 {
+    font-size: 1.3rem;
     font-weight: 700;
-    margin-bottom: 1.2rem;
-    font-size: 1.2rem;
+    color: #1e2a3e;
+    margin-bottom: 0.3rem;
 }
 
-.skill-items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
+.edu-institution {
+    font-weight: 600;
+    color: #b1624b;
+    margin-bottom: 0.3rem;
 }
 
-.skill-items span {
-    background: white;
-    border: 1px solid #e2dbd3;
-    padding: 0.3rem 1rem;
-    border-radius: 40px;
-    font-size: 0.8rem;
-    font-weight: 500;
-    color: #3a4c62;
+.edu-detail {
+    font-size: 0.85rem;
+    color: #6c7e94;
+    margin-bottom: 1rem;
 }
 
-.research {
+.edu-desc {
+    font-size: 0.95rem;
+    color: #2c3e4e;
+    line-height: 1.6;
+}
+
+/* Skills with Progress Bars */
+.skills {
     padding: 5rem 2rem;
     background: #fefaf7;
+}
+
+.skills-full {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.skill-bar-item {
+    margin-bottom: 1.5rem;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+    color: #2c3e4e;
+}
+
+.progress-bar {
+    background: #eae2da;
+    border-radius: 30px;
+    height: 8px;
+    overflow: hidden;
+}
+
+.progress {
+    background: #b1624b;
+    height: 100%;
+    border-radius: 30px;
+    width: 0%;
+}
+
+/* Research */
+.research {
+    padding: 5rem 2rem;
+    background: white;
 }
 
 .research-card {
     max-width: 800px;
     margin: 0 auto;
-    background: white;
+    background: #fefaf7;
     padding: 2.5rem;
     border-radius: 32px;
     border: 1px solid #eae2da;
@@ -288,15 +337,16 @@ body {
     color: #b1624b;
 }
 
+/* Poem */
 .poem {
     padding: 5rem 2rem;
-    background: white;
+    background: #fefaf7;
 }
 
 .poem-card {
     max-width: 700px;
     margin: 0 auto;
-    background: #fefaf7;
+    background: white;
     padding: 2.5rem;
     border-radius: 32px;
     text-align: center;
@@ -333,9 +383,10 @@ body {
     transition: 0.2s;
 }
 
+/* Contact */
 .contact {
     padding: 5rem 2rem;
-    background: #fefaf7;
+    background: white;
 }
 
 .contact-content {
@@ -378,6 +429,7 @@ body {
     border-top: 1px solid #eae2da;
 }
 
+/* Footer */
 .footer {
     background: #fefaf7;
     text-align: center;
@@ -402,6 +454,7 @@ body {
     color: #b1624b;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
     .hero-container {
         flex-direction: column;
@@ -419,5 +472,11 @@ body {
     }
     .nav-container {
         flex-direction: column;
+    }
+    .education-grid {
+        padding: 0 1rem;
+    }
+    .edu-card {
+        padding: 1.5rem;
     }
 }
