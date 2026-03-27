@@ -5,9 +5,9 @@
 }
 
 body {
-    background: #f1f5f9;
+    background: #0a0c15;
     font-family: 'Inter', sans-serif;
-    color: #0f172a;
+    color: #e6e6e6;
     scroll-behavior: smooth;
 }
 
@@ -18,11 +18,12 @@ body {
 }
 
 .navbar {
-    background: #ffffff;
+    background: rgba(10, 12, 21, 0.98);
+    backdrop-filter: blur(12px);
     position: sticky;
     top: 0;
     z-index: 100;
-    border-bottom: 1px solid #e2e8f0;
+    border-bottom: 1px solid rgba(233, 69, 96, 0.2);
     padding: 1rem 0;
 }
 
@@ -40,7 +41,7 @@ body {
     font-size: 1.8rem;
     font-weight: 800;
     letter-spacing: -0.02em;
-    background: linear-gradient(135deg, #0f172a 0%, #d4af6a 100%);
+    background: linear-gradient(135deg, #e6e6e6 0%, #e94560 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -54,19 +55,19 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #334155;
+    color: #b0b0c0;
     font-weight: 500;
     font-size: 0.9rem;
     transition: color 0.2s;
 }
 
 .nav-links a:hover {
-    color: #d4af6a;
+    color: #e94560;
 }
 
 .hero {
     padding: 5rem 2rem;
-    background: #ffffff;
+    background: #0f1217;
 }
 
 .hero-container {
@@ -83,12 +84,12 @@ body {
     height: 220px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid #d4af6a;
-    box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.1);
+    border: 4px solid #e94560;
+    box-shadow: 0 20px 30px -12px rgba(233, 69, 96, 0.3);
 }
 
 .hero-badge {
-    color: #d4af6a;
+    color: #e94560;
     font-weight: 600;
     font-size: 0.8rem;
     letter-spacing: 1px;
@@ -101,15 +102,15 @@ body {
     line-height: 1.2;
     margin-bottom: 1rem;
     letter-spacing: -0.02em;
-    color: #0f172a;
+    color: #ffffff;
 }
 
 .hero-content h1 span {
-    color: #d4af6a;
+    color: #e94560;
 }
 
 .hero-description {
-    color: #334155;
+    color: #c0c0d0;
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 2rem;
@@ -123,24 +124,26 @@ body {
 }
 
 .btn-primary {
-    background: #d4af6a;
-    color: #0f172a;
+    background: #e94560;
+    color: white;
     padding: 0.75rem 2rem;
     border-radius: 40px;
     text-decoration: none;
     font-weight: 600;
     transition: all 0.2s;
+    box-shadow: 0 4px 12px rgba(233, 69, 96, 0.3);
 }
 
 .btn-primary:hover {
-    background: #c9a252;
+    background: #d42a47;
     transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(233, 69, 96, 0.4);
 }
 
 .btn-secondary {
     background: transparent;
-    color: #d4af6a;
-    border: 2px solid #d4af6a;
+    color: #e94560;
+    border: 2px solid #e94560;
     padding: 0.75rem 2rem;
     border-radius: 40px;
     text-decoration: none;
@@ -149,8 +152,8 @@ body {
 }
 
 .btn-secondary:hover {
-    background: #d4af6a;
-    color: #0f172a;
+    background: #e94560;
+    color: white;
     transform: translateY(-2px);
 }
 
@@ -163,13 +166,13 @@ body {
 .quick-stats-hero .stat-number {
     font-weight: 800;
     font-size: 1.3rem;
-    color: #d4af6a;
+    color: #e94560;
     display: block;
 }
 
 .quick-stats-hero .stat-label {
     font-size: 0.75rem;
-    color: #64748b;
+    color: #8a8aa0;
 }
 
 .section-header {
@@ -178,7 +181,7 @@ body {
 }
 
 .section-tag {
-    color: #d4af6a;
+    color: #e94560;
     font-weight: 600;
     font-size: 0.8rem;
     letter-spacing: 1px;
@@ -189,12 +192,12 @@ body {
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: -0.02em;
-    color: #0f172a;
+    color: #ffffff;
 }
 
 .about {
     padding: 5rem 2rem;
-    background: #ffffff;
+    background: #0f1217;
 }
 
 .about-content {
@@ -205,13 +208,13 @@ body {
 
 .about-content p {
     margin-bottom: 1.5rem;
-    color: #334155;
+    color: #c0c0d0;
     line-height: 1.6;
 }
 
 .education {
     padding: 5rem 2rem;
-    background: #f1f5f9;
+    background: #12162c;
 }
 
 .education-grid {
@@ -223,40 +226,40 @@ body {
 }
 
 .edu-card {
-    background: #ffffff;
+    background: #1a1f3a;
     padding: 1.8rem;
     border-radius: 20px;
-    border: 1px solid #e2e8f0;
+    border: 1px solid rgba(233, 69, 96, 0.2);
 }
 
 .edu-card h3 {
     font-size: 1.2rem;
     margin-bottom: 0.3rem;
-    color: #0f172a;
+    color: #ffffff;
 }
 
 .edu-institution {
     font-weight: 500;
-    color: #d4af6a;
+    color: #e94560;
     margin-bottom: 0.3rem;
     font-size: 0.9rem;
 }
 
 .edu-detail {
     font-size: 0.8rem;
-    color: #64748b;
+    color: #8a8aa0;
     margin-bottom: 0.8rem;
 }
 
 .edu-desc {
     font-size: 0.9rem;
-    color: #334155;
+    color: #c0c0d0;
     line-height: 1.5;
 }
 
 .skills {
     padding: 5rem 2rem;
-    background: #ffffff;
+    background: #0f1217;
 }
 
 .skills-full {
@@ -273,18 +276,18 @@ body {
     justify-content: space-between;
     margin-bottom: 0.5rem;
     font-weight: 500;
-    color: #0f172a;
+    color: #e0e0e0;
 }
 
 .progress-bar {
-    background: #e2e8f0;
+    background: #1e2340;
     border-radius: 30px;
     height: 6px;
     overflow: hidden;
 }
 
 .progress {
-    background: #d4af6a;
+    background: #e94560;
     height: 100%;
     border-radius: 30px;
     width: 0;
@@ -292,21 +295,21 @@ body {
 
 .research {
     padding: 5rem 2rem;
-    background: #f1f5f9;
+    background: #12162c;
 }
 
 .research-card {
     max-width: 800px;
     margin: 0 auto;
-    background: #ffffff;
+    background: #1a1f3a;
     padding: 2.5rem;
     border-radius: 24px;
-    border: 1px solid #e2e8f0;
+    border: 1px solid rgba(233, 69, 96, 0.2);
 }
 
 .research-card p {
     margin-bottom: 1rem;
-    color: #334155;
+    color: #c0c0d0;
     line-height: 1.6;
 }
 
@@ -318,17 +321,17 @@ body {
 }
 
 .research-tags span {
-    background: #f1f5f9;
+    background: #1e2340;
     padding: 0.2rem 1rem;
     border-radius: 40px;
     font-size: 0.75rem;
     font-weight: 500;
-    color: #d4af6a;
+    color: #e94560;
 }
 
 .achievements {
     padding: 5rem 2rem;
-    background: #ffffff;
+    background: #0f1217;
 }
 
 .achievements-grid {
@@ -338,16 +341,16 @@ body {
 }
 
 .achievement-card {
-    background: #f8fafc;
+    background: #1a1f3a;
     padding: 1.8rem;
     border-radius: 20px;
-    border: 1px solid #e2e8f0;
+    border: 1px solid rgba(233, 69, 96, 0.2);
 }
 
 .achievement-badge {
     display: inline-block;
-    background: #e2e8f0;
-    color: #d4af6a;
+    background: #1e2340;
+    color: #e94560;
     font-size: 0.7rem;
     font-weight: 700;
     padding: 0.2rem 0.8rem;
@@ -358,11 +361,11 @@ body {
 .achievement-card h3 {
     font-size: 1.2rem;
     margin-bottom: 0.8rem;
-    color: #0f172a;
+    color: #ffffff;
 }
 
 .achievement-card p {
-    color: #334155;
+    color: #c0c0d0;
     font-size: 0.9rem;
     line-height: 1.5;
     margin-bottom: 1rem;
@@ -375,32 +378,32 @@ body {
 }
 
 .achievement-tags span {
-    background: #e2e8f0;
+    background: #1e2340;
     padding: 0.2rem 0.7rem;
     border-radius: 40px;
     font-size: 0.7rem;
-    color: #475569;
+    color: #c0c0d0;
 }
 
 .poem {
     padding: 5rem 2rem;
-    background: #f1f5f9;
+    background: #12162c;
 }
 
 .poem-card {
     max-width: 700px;
     margin: 0 auto;
-    background: #ffffff;
+    background: #1a1f3a;
     padding: 2.5rem;
     border-radius: 24px;
     text-align: center;
-    border: 1px solid #e2e8f0;
+    border: 1px solid rgba(233, 69, 96, 0.2);
 }
 
 .poem-title {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #d4af6a;
+    color: #e94560;
     margin-bottom: 1rem;
 }
 
@@ -408,18 +411,18 @@ body {
     font-size: 1rem;
     line-height: 1.7;
     margin-bottom: 1rem;
-    color: #334155;
+    color: #c0c0d0;
 }
 
 .poet-name {
     text-align: right;
-    color: #64748b;
+    color: #8a8aa0;
     margin-bottom: 1.5rem;
 }
 
 .youtube-link a {
-    background: #d4af6a;
-    color: #0f172a;
+    background: #e94560;
+    color: white;
     padding: 0.6rem 1.5rem;
     border-radius: 40px;
     text-decoration: none;
@@ -428,13 +431,13 @@ body {
 }
 
 .youtube-link a:hover {
-    background: #c9a252;
+    background: #d42a47;
     transform: scale(1.02);
 }
 
 .contact {
     padding: 5rem 2rem;
-    background: #ffffff;
+    background: #0f1217;
 }
 
 .contact-content {
@@ -446,7 +449,7 @@ body {
 .contact-email {
     font-size: 1.2rem;
     font-weight: 700;
-    color: #d4af6a;
+    color: #e94560;
     text-decoration: none;
     display: inline-block;
     margin-bottom: 1.5rem;
@@ -463,12 +466,12 @@ body {
 .contact-social a {
     text-decoration: none;
     font-weight: 500;
-    color: #334155;
+    color: #c0c0d0;
     transition: color 0.2s;
 }
 
 .contact-social a:hover {
-    color: #d4af6a;
+    color: #e94560;
 }
 
 .quick-stats {
@@ -476,28 +479,28 @@ body {
     justify-content: center;
     gap: 2rem;
     padding-top: 1.5rem;
-    border-top: 1px solid #e2e8f0;
+    border-top: 1px solid rgba(233, 69, 96, 0.2);
 }
 
 .quick-stats .stat-number {
     font-weight: 800;
     font-size: 1.3rem;
-    color: #d4af6a;
+    color: #e94560;
     display: block;
 }
 
 .quick-stats .stat-label {
     font-size: 0.75rem;
-    color: #64748b;
+    color: #8a8aa0;
 }
 
 .footer {
-    background: #f1f5f9;
+    background: #0f1217;
     text-align: center;
     padding: 2rem;
-    color: #94a3b8;
+    color: #6a6a80;
     font-size: 0.8rem;
-    border-top: 1px solid #e2e8f0;
+    border-top: 1px solid rgba(233, 69, 96, 0.2);
 }
 
 .footer-links {
@@ -505,13 +508,13 @@ body {
 }
 
 .footer-links a {
-    color: #94a3b8;
+    color: #8a8aa0;
     text-decoration: none;
     margin: 0 0.3rem;
 }
 
 .footer-links a:hover {
-    color: #d4af6a;
+    color: #e94560;
 }
 
 @media (max-width: 768px) {
